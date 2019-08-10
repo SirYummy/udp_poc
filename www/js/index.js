@@ -47,5 +47,17 @@ var app = {
         console.log('Received Event: ' + id);
 
         console.log(`cordova global object: ${cordova}`)
+        
+        let timeoutID;
+
+        function delayedAlert() {
+          timeoutID = window.setTimeout(window.alert, 10000, 'Beep')
+        }
+
+        function clearAlert() {
+          window.clearTimeout(timeoutID)
+        }
+        
+        delayedAlert()
     }
 };
