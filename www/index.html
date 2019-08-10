@@ -39,15 +39,22 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>UDP PoC</title>
+    <title>UDP Scanner PoC</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>UDP PoC</h1>
+        <h1>UDP Scanner PoC</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+            <p class="event received">Local Device is Ready</p>
+            <p class="event listening">Scanning for remote device via UDP</p>
+            <h2>Detected Devices</h2>
+            <ul>
+                <li>loopback</li>
+                <li>...</li>
+            </ul>
+            <button>Retry</button>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
